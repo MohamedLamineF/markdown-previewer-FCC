@@ -1,0 +1,5 @@
+
+User-agent: *
+Disallow:
+
+Sitemap: https://markdown-previewer.netlify.app/sitemap.xml
