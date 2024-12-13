@@ -1,4 +1,9 @@
+// import { useState } from "react";
 import "./App.css";
+import { Header } from "./components/Layout/Header";
+
+// const [markdown, setMarkdown] = useState();
+// const { isDark, setIsDark } = useDarkMode();
 
 function App() {
   return (
@@ -9,7 +14,7 @@ function App() {
             <div></div>
           </div>
         </div>
-
+        <Header isDark={true} onToggleTheme={() => null} />
         <div className="relative z-10 flex h-full flex-col items-center justify-center px-4">
           <div className="max-w-3xl text-center">
             <h1 className="mb-8 text-4xl font-bold tracking-tight sm:text-6xl lg:text-7xl text-slate-900">
