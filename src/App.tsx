@@ -1,6 +1,8 @@
 import "./App.css";
 import { Header } from "./components/Layout/Header";
 import { useDarkMode } from "./hooks/useDarkMode";
+import { Editor } from "./components/Editor";
+import { Preview } from "./components/Preview";
 
 function App() {
   const { isDark, setIsDark } = useDarkMode();
@@ -12,6 +14,12 @@ function App() {
             <div></div>
           </div>
           <Header isDark={isDark} onToggleTheme={() => setIsDark(!isDark)} />
+          <main className="container mx-auto px-4 py-8">
+            <div className="grid md:grid-cols-2 gap-6 min-h-[calc(100vh-12rem)]">
+              <Editor value="" onChange={() => null} />
+              <Preview value="" onChange={() => null} />
+            </div>
+          </main>
         </div>
       </div>
     </>

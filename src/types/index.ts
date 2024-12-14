@@ -11,3 +11,8 @@ export interface ThemeToggleProps {
   isDark: boolean;
   onToggle: () => void;
 }
+
+export interface EditorProps {
+  value: string;
+  onChange: (value: string) => void;
+}
