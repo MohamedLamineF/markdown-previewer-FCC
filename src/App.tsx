@@ -5,6 +5,7 @@ import { useDarkMode } from "./hooks/useDarkMode";
 import { Editor } from "./components/Editor";
 import { Preview } from "./components/Preview";
 import { defaultMarkdown } from "./utils/defaultMarkdow";
+import { Footer } from "./components/Layout/Footer";
 
 function App() {
   const { isDark, setIsDark } = useDarkMode();
@@ -19,12 +20,13 @@ function App() {
           </div>
         </div>
         <Header isDark={isDark} onToggleTheme={() => setIsDark(!isDark)} />
-        <main className="container mx-auto px-4 py-8">
-          <div className="grid md:grid-cols-2 gap-6 min-h-[calc(100vh-12rem)]">
+        <main className="container mx-auto px-4 py-8 mb-28">
+          <div className="grid md:grid-cols-2 gap-6 min-h-[calc(100vh-16rem)]">
             <Editor value={markdown} onChange={setMarkdown} />
             <Preview markdown={markdown} />
           </div>
         </main>
+        <Footer />
       </div>
     </>
   );
