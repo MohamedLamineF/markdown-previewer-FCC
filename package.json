@@ -11,11 +11,13 @@
   },
   "dependencies": {
     "lucide-react": "^0.468.0",
+    "marked": "^15.0.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
   "devDependencies": {
     "@eslint/js": "^9.15.0",
+    "@types/marked": "^5.0.2",
     "@types/react": "^17.0.83",
     "@types/react-dom": "^17.0.26",
     "@vitejs/plugin-react": "^4.3.4",

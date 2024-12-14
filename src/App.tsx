@@ -1,11 +1,15 @@
+import { useState } from "react";
 import "./App.css";
 import { Header } from "./components/Layout/Header";
 import { useDarkMode } from "./hooks/useDarkMode";
 import { Editor } from "./components/Editor";
 import { Preview } from "./components/Preview";
+import { defaultMarkdown } from "./utils/defaultMarkdow";
 
 function App() {
   const { isDark, setIsDark } = useDarkMode();
+  const [markdown, setMarkdown] = useState(defaultMarkdown);
+  
   return (
     <>
       <div className="relative h-screen">
@@ -16,7 +20,7 @@ function App() {
           <Header isDark={isDark} onToggleTheme={() => setIsDark(!isDark)} />
           <main className="container mx-auto px-4 py-8">
             <div className="grid md:grid-cols-2 gap-6 min-h-[calc(100vh-12rem)]">
-              <Editor value="" onChange={() => null} />
+              <Editor value={markdown} onChange={setMarkdown} />
               <Preview value="" onChange={() => null} />
             </div>
           </main>

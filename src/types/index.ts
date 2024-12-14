@@ -16,3 +16,9 @@ export interface EditorProps {
   value: string;
   onChange: (value: string) => void;
 }
+
+export interface MarkdownContent {
+  markdown: string;
+  html: string | Promise<string>;
+  plainText: string;
+}
