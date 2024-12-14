@@ -3,7 +3,7 @@ import { HeaderProps } from "../../types";
 
 export function Header({ isDark, onToggleTheme }: HeaderProps) {
   return (
-    <header className="sticky top-0 z-10 text-gray-900 dark:text-white p-2 shadow-2xl transition-colors duration-200">
+    <header className="sticky top-0 z-10 text-gray-900 dark:text-white p-2 shadow-sm shadow-blue-100 transition-colors duration-200">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between">
           <div></div>
@@ -14,7 +14,11 @@ export function Header({ isDark, onToggleTheme }: HeaderProps) {
             </h1>
           </div>
 
-          <ThemeToggle isDark={isDark} onToggle={onToggleTheme} />
+          <ThemeToggle
+            isDark={isDark}
+            onToggle={onToggleTheme}
+            aria-label="Toggle theme"
+          />
         </div>
       </div>
     </header>
