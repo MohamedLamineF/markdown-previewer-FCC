@@ -1,5 +1,6 @@
 import { useMarkdown } from "../hooks/useMarkdown";
 import { PreviewProps } from "../types/index";
+import { CopyButton } from "./UI/copyButton";
 
 export function Preview({ markdown }: PreviewProps) {
   const { html, plainText } = useMarkdown(markdown);
@@ -11,9 +12,10 @@ export function Preview({ markdown }: PreviewProps) {
           <div className="flex items-center gap-2">
             <h2 className="text-xl font-semibold">Preview</h2>
           </div>
-          {/* <CopyButton text={content} /> */}
+          <CopyButton text={plainText} />
         </div>
       </div>
+      <div className="h-1 bg-gradient-to-r from-purple-500 to-blue-500"></div>
       <div
         id="preview"
         className="flex-1 p-6 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700
