@@ -22,3 +22,7 @@ export interface MarkdownContent {
   html: string | Promise<string>;
   plainText: string;
 }
+
+export interface PreviewProps {
+  markdown: string;
+}

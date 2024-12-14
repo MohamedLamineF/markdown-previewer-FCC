@@ -1,15 +1,15 @@
 export const defaultMarkdown = `
-# Hi, im Lamine and welcome to my Markdown Previewer!
-## This project made for freeCodeCamp's Front End Libraries Certification
-### i hope you like it!
+# Hi, I'm Lamine and welcome to my Markdown Previewer!
+## This project was made for freeCodeCamp's Front End Libraries Certification
+### I hope you like it!
 
-Here's some code, \`<div>Hello World !</div>\`, between 2 backticks.
+Here's some code, \`<div>Hello World!</div>\`, between two backticks.
 
-\`\`\`
+\`\`\`javascript
 // this is multi-line code:
 
 function anotherExample(firstLine, lastLine) {
-  if (firstLine == '\`\`\`' && lastLine == '\`\`\`') {
+  if (firstLine === '\`\`\`' && lastLine === '\`\`\`') {
     return multiLineCode;
   }
 }
@@ -25,15 +25,15 @@ There's also [links](https://www.freecodecamp.org), and
 
 And if you want to get really crazy, even tables:
 
-Wild Header | Crazy Header | Another Header?
------------- | ------------- | -------------
-Your content can | be here, and it | can be here....
-And here. | Okay. | I think we get it.
+| Wild Header    | Crazy Header   | Another Header? |
+| -------------- | -------------- | --------------- |
+| Your content can | be here, and it | can be here.... |
+| And here.      | Okay.          | I think we get it. |
 
 - And of course there are lists.
   - Some are bulleted.
-     - With different indentation levels.
-        - That look like this.
+    - With different indentation levels.
+      - That look like this.
 
 1. And there are numbered lists too.
 1. Use just 1s if you want!

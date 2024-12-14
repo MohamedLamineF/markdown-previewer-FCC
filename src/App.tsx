@@ -9,7 +9,7 @@ import { defaultMarkdown } from "./utils/defaultMarkdow";
 function App() {
   const { isDark, setIsDark } = useDarkMode();
   const [markdown, setMarkdown] = useState(defaultMarkdown);
-  
+
   return (
     <>
       <div className="relative h-screen">
@@ -21,7 +21,7 @@ function App() {
           <main className="container mx-auto px-4 py-8">
             <div className="grid md:grid-cols-2 gap-6 min-h-[calc(100vh-12rem)]">
               <Editor value={markdown} onChange={setMarkdown} />
-              <Preview value="" onChange={() => null} />
+              <Preview markdown={markdown} />
             </div>
           </main>
         </div>
