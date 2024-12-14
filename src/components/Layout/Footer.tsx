@@ -1,9 +1,8 @@
 export function Footer() {
   return (
     <>
-      <div className="sticky bottom-14 z-10 h-1 bg-gradient-to-r from-purple-500 to-blue-500"></div>
+      <div className="sticky bottom-8 z-20 h-1 bg-gradient-to-r from-purple-500 to-blue-500"></div>
       <footer className="sticky bottom-0 z-10 bg-white dark:bg-gray-800 shadow-lg text-gray-900 dark:text-white p-2 transition-colors duration-200">
-        {/* <div className="container mx-auto px-4"> */}
         <div className="grid grid-cols-1 md:grid-cols-3 items-center gap-2 w-full text-white/80 text-xs">
           <p className="mr-2  text-center md:text-start truncate ">
             Made for FreeCodeCamp course "Front End Development Libraries"
@@ -48,7 +47,6 @@ export function Footer() {
 
           <span className="mr-2 text-center md:text-end">© Lamine</span>
         </div>
-        {/* </div> */}
       </footer>
     </>
   );
