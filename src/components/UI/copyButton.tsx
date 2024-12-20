@@ -1,12 +1,12 @@
-import { Copy, Check } from "lucide-react";
-import { useCopy } from "../../hooks/useCopy";
+import { Copy, Check } from 'lucide-react';
+import { useCopy } from '../../hooks/useCopy';
 
 interface CopyButtonProps {
   text: string;
   className?: string;
 }
 
-export function CopyButton({ text, className = "" }: CopyButtonProps) {
+export function CopyButton({ text, className = '' }: CopyButtonProps) {
   const { copied, copyToClipboard } = useCopy();
 
   return (

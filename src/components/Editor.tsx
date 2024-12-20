@@ -1,5 +1,5 @@
-import { EditorProps } from "../types/index";
-import { CopyButton } from "./UI/copyButton";
+import { EditorProps } from '../types/index';
+import { CopyButton } from './UI/copyButton';
 
 export function Editor({ value, onChange }: EditorProps) {
   return (
