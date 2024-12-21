@@ -1,11 +1,11 @@
-import { useState } from "react";
-import "./App.css";
-import { Header } from "./components/Layout/Header";
-import { useDarkMode } from "./hooks/useDarkMode";
-import { Editor } from "./components/Editor";
-import { Preview } from "./components/Preview";
-import { defaultMarkdown } from "./utils/defaultMarkdow";
-import { Footer } from "./components/Layout/Footer";
+import { useState } from 'react';
+import './App.css';
+import { Header } from './components/Layout/Header';
+import { useDarkMode } from './hooks/useDarkMode';
+import { Editor } from './components/Editor';
+import { Preview } from './components/Preview';
+import { defaultMarkdown } from './utils/defaultMarkdow';
+import { Footer } from './components/Layout/Footer';
 
 function App() {
   const { isDark, setIsDark } = useDarkMode();

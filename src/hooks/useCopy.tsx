@@ -1,4 +1,4 @@
-import { useState, useCallback } from "react";
+import { useState, useCallback } from 'react';
 
 export function useCopy(resetDelay = 2000) {
   const [copied, setCopied] = useState(false);

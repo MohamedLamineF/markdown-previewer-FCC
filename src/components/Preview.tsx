@@ -1,6 +1,6 @@
-import { useMarkdown } from "../hooks/useMarkdown";
-import { PreviewProps } from "../types/index";
-import { CopyButton } from "./UI/copyButton";
+import { useMarkdown } from '../hooks/useMarkdown';
+import { PreviewProps } from '../types/index';
+import { CopyButton } from './UI/copyButton';
 
 export function Preview({ markdown }: PreviewProps) {
   const { html, plainText } = useMarkdown(markdown);
