@@ -14,19 +14,19 @@
 
 <div>
 
-![GitHub Issues](https://img.shields.io/github/issues/mohamedLamineF/Random-DZ-Quote-Machine?style=for-the-badge)
+![GitHub Issues](https://img.shields.io/github/issues/mohamedLamineF/markdown-previewer-FCC?style=for-the-badge)
 
 </div>
 
 <div>
 
-![GitHub Pull Requests](https://img.shields.io/github/issues-pr/MohamedLamineF/Random-DZ-Quote-Machine?style=for-the-badge)
+![GitHub Pull Requests](https://img.shields.io/github/issues-pr/MohamedLamineF/markdown-previewer-FCC?style=for-the-badge)
 
 </div>
 
 <div>
 
-![GitHub License](https://img.shields.io/github/license/MohamedLamineF/Random-DZ-Quote-Machine?style=for-the-badge&color=blue)
+![GitHub License](https://img.shields.io/github/license/MohamedLamineF/markdown-previewer-FCC?style=for-the-badge&color=blue)
 
 </div>
 </div>
@@ -54,22 +54,25 @@ This project was created as part of <strong style="color:#ddffee">**FreeCodeCamp
 
 ## ℹ️ About <a name = "about"></a>
 
-This application generates random Algerian quotes to inspire you and offer insights into Algeria’s culture and values.You can also share your favorite quotes on Twitter or BlueSky with a single click.
+A modern, feature-rich Markdown previewer built with React, TypeScript, and Tailwind CSS. Transform your markdown into beautiful HTML with real-time preview.
 
 ## 🎥 Demo <a name = "demo"></a>
 
 <p align="center" >
-  <a href="https://dz-quotes.netlify.app/" rel="noopener">
-<img src="./public/Screenshot.png" alt="md preview X" style="border-radius:5%; margin:10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);"></a>
+  <a href="https://md-preview-x.netlify.app/" rel="noopener">
+<img src="./public/screenshot.png" alt="md preview X" style="margin:10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);"></a>
 </p>
 
 ## ✨ Features <a name = "features"></a>
 
-- 🎲 Generate random Algerian quotes from a diverse collection.
-- 🔄 Fetch a new quote with the "New Quote" button.
-- 🐦 Share your favorite quotes directly on Twitter.
-- 💙 Share your quotes on BlueSky with the "Skeet" button.
-- 🌐 Multi-language support (Arabic and English).
+- ✨ Real-time Markdown preview
+- 🌓 Dark/Light mode with system preference detection
+- 📋 Copy functionality for both Markdown and HTML output
+- 💅 Beautiful, responsive design with smooth transitions
+- 🎨 Syntax highlighting for code blocks
+- 📱 Mobile-friendly interface
+- 🚀 GitHub Flavored Markdown support
+- 💾 Persistent theme preference
 
 ## 🛠️ Technologies Used <a name="technologies"></a>
 
@@ -79,7 +82,7 @@ This application generates random Algerian quotes to inspire you and offer insig
 - **Vite** for fast development and bundling
 - **ESLint** for code linting and quality control
 - **Prettier** for code formatting
-- **Font Awesome** for icons and symbols
+- **Lucide React** for icons and symbols
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
 
@@ -94,7 +97,7 @@ Follow these steps to get a local copy up and running:
 ### 2. Clone the Repository
 
 ```bash
-git clone git@github.com:MohamedLamineF/Random-DZ-Quote-Machine.git
+git clone git@github.com:MohamedLamineF/markdown-previewer-FCC.git
 ```
 
 ### 3. Navigate to the Project Directory
